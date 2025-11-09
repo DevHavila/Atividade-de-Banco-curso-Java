@@ -43,7 +43,7 @@ package com.example.banco.model;
             balance += amount;
         }
 
-        public void withdraw(Double amount) throws DomainException {
+        public double withdraw(Double amount) throws DomainException {
             if(amount > withdrawLimit) {
                 throw new DomainException("The amount exceeds withdraw Limit");
             }
@@ -52,6 +52,7 @@ package com.example.banco.model;
             }
 
             balance -= amount;
+            return 0;
         }
 
 }

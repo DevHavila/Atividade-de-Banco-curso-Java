@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">BANCO</string>
+    <string name="number">Number:</string>
+    <string name="balance">Balance:</string>
+    <string name="limit">Limit:</string>
+    <string name="enter_amount_for_withdraw">Enter amount for withdraw:</string>
+    <string name="holder">Holder:</string>
+    <string name="name">name</string>
+    <string name="result">Result</string>
 </resources>
