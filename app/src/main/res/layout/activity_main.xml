@@ -12,11 +12,12 @@
         android:id="@+id/number"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="24dp"
         android:text="@string/number"
         android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="28dp"
         tools:ignore="MissingConstraints" />
 
     <TextView
@@ -73,19 +74,19 @@
 
     <EditText
         android:id="@+id/idNumber"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="211dp"
+        android:layout_height="45dp"
         android:ems="10"
         android:inputType="number"
-        app:layout_constraintBottom_toTopOf="@+id/IdHolder"
+        app:layout_constraintBottom_toTopOf="@+id/idHolder"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.26"
+        app:layout_constraintHorizontal_bias="0.252"
         app:layout_constraintStart_toEndOf="@+id/number"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.484" />
+        app:layout_constraintVertical_bias="0.533" />
 
     <EditText
-        android:id="@+id/IdHolder"
+        android:id="@+id/idHolder"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="12dp"
@@ -95,7 +96,9 @@
         app:layout_constraintBottom_toTopOf="@+id/idBalance"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.342"
-        app:layout_constraintStart_toEndOf="@+id/textView8" />
+        app:layout_constraintStart_toEndOf="@+id/textView8"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
 
     <EditText
         android:id="@+id/idBalance"
@@ -103,7 +106,6 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"
         android:ems="10"
-        android:inputType="number"
         app:layout_constraintBottom_toTopOf="@+id/idLimit"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.26"
@@ -122,7 +124,7 @@
         app:layout_constraintStart_toEndOf="@+id/withdrawLimit" />
 
     <EditText
-        android:id="@+id/idAmount"
+        android:id="@+id/idSaque"
         android:layout_width="128dp"
         android:layout_height="42dp"
         android:ems="10"
@@ -136,9 +138,8 @@
 
     <Button
         android:id="@+id/button"
-        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:onClick="withdraw"
+        android:onClick="Operation"
         android:text="Go"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/idResult"
