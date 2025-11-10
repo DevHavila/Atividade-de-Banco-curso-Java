@@ -1,6 +1,8 @@
 package com.example.banco.model;
 
-    public class Account {
+import android.view.View;
+
+public class Account {
 
         private Integer number;
         private String holder;
@@ -8,7 +10,6 @@ package com.example.banco.model;
         private Double withdrawLimit;
 
         public Account(){
-            super();
         }
 
         public Account(Integer number, String holder, Double balance, Double withdrawmit) {

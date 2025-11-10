@@ -124,7 +124,7 @@
         app:layout_constraintStart_toEndOf="@+id/withdrawLimit" />
 
     <EditText
-        android:id="@+id/idSaque"
+        android:id="@+id/idAmount"
         android:layout_width="128dp"
         android:layout_height="42dp"
         android:ems="10"
@@ -138,27 +138,27 @@
 
     <Button
         android:id="@+id/button"
-        android:layout_height="wrap_content"
-        android:onClick="Operation"
+        android:layout_width="102dp"
+        android:layout_height="43dp"
+        android:onClick="button"
         android:text="Go"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/idResult"
-        app:layout_constraintHorizontal_bias="0.4"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/withdrawLimit3"
-        app:layout_constraintVertical_bias="0.082"
+        app:layout_constraintVertical_bias="0.085"
         tools:ignore="OnClick" />
 
     <TextView
         android:id="@+id/idResult"
-        android:layout_width="97dp"
-        android:layout_height="46dp"
-        android:layout_marginEnd="168dp"
+        android:layout_width="259dp"
+        android:layout_height="116dp"
+        android:layout_marginEnd="4dp"
         android:text="@string/result"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/withdrawLimit3"
-        app:layout_constraintVertical_bias="0.082" />
+        app:layout_constraintVertical_bias="0.104" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
